@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6 col-6">
 					<nuxt-link to="/" class="logo active">
-						<!-- <base-svg name="logo"></base-svg> -->
+						<base-svg name="logo"></base-svg>
 					</nuxt-link>
 				</div>
 				<div class="col-md-8 col-sm-6 col-6 toolbar">
@@ -20,11 +20,18 @@
 						<li :class="{active: $route.path == `/`}" @click="hide">
 							<nuxt-link to="/">Главная</nuxt-link>
 						</li>
-						<li :class="{active: $route.path == `/`}" @click="hide">
+						<li :class="{active: $route.path == `/blog/articles`}" @click="hide">
 							<nuxt-link to="/blog/articles">Обо мне</nuxt-link>
 						</li>
-						<li :class="{active: $route.path == `/`}" @click="hide">
+						<li :class="{active: $route.path == `/events`}" @click="hide">
 							<nuxt-link to="/events">Контакты</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/events">
+								<div class="btn btn-primary">
+									<span>Книга рецептов</span>
+								</div>
+							</nuxt-link>
 						</li>
 					</ul>
 				</div>
@@ -98,6 +105,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 header {
+	box-shadow: 0px 4px 15px rgba(128, 128, 128, 0.25);
 	position: fixed;
 	top: -81px;
 	left: 0%;
@@ -124,17 +132,7 @@ header {
 		align-items: center;
 		height: 100%;
 		.svg {
-			max-width: 74px;
-		}
-		&__text {
-			width: 50%;
-			padding-left: 60px;
-
-			span {
-				color: $color-7;
-				font-size: 12px;
-				font-weight: 500;
-			}
+			width: 70%;
 		}
 	}
 	.menu {
@@ -147,11 +145,10 @@ header {
 		li {
 			margin-left: 30px;
 			padding: 0;
-			font-size: 18px;
+			font-size: 17px;
 			font-weight: 500;
 			a {
-				font-weight: 400;
-				font-size: 18px;
+				font-weight: 500;
 				color: $color-2;
 				text-decoration: none;
 				transition: color 0.4s ease-in-out;
@@ -171,7 +168,10 @@ header {
 			}
 			&.active {
 				a {
-					color: $color-3
+					color: $color-3;
+					background: $base-gradient;
+					background-clip: text;
+  					-webkit-text-fill-color: transparent;
 				}
 			}
 		}
@@ -372,10 +372,6 @@ header {
 		}
 		.logo {
 			display: flex;
-			.svg {
-				max-width: 50px;
-				max-height: 50px;
-			}
 		}
 		&.active {
 			outline: 1px solid rgba(255, 255, 255, 0.2);

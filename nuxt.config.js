@@ -1,5 +1,5 @@
 module.exports = {
-    ssr: false,
+    ssr: true,
     loading: true,
     server: {
         host: process.env.HOST || '0.0.0.0',

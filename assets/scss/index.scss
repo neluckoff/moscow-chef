@@ -2,6 +2,7 @@
 @import "_base/reset";
 @import "_base/bootstrap";
 @import "_base/anims";
+@import "_ui/btn";
 @import "_fonts/fonts";
 @import "_fonts/tipography";
 
@@ -69,4 +70,19 @@ body {
 
 input {
     font-family: $font-default, sans-serif;
+}
+
+h1 {
+    color: $color-2;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56.35px;
+}
+
+p {
+    margin-top: 32px;
+    color: $color-5;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
 }

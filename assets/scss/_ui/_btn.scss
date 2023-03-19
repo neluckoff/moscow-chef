@@ -1,0 +1,65 @@
+.btn {
+    height: 38px;
+    border-radius: 13px;
+    padding: 0px 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+
+    span {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        color: $color-2;
+    }
+    
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.btn-big {
+    height: 54px;
+    padding: 0 54px;
+    span {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+    }
+}
+.btn-card {
+    height: 46px;
+    padding: 0 30px;
+    min-width: 230px;
+    span {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 23px;
+    }
+}
+
+.btn-primary {
+    background: $base-gradient;
+
+    span {
+        color: $color-1;
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid $color-8;
+
+    span {
+        color: $color-2;
+    }
+}
+
+.btn-disabled {
+    background: $color-4;
+
+    span {
+        color: $color-5;
+    }
+}
