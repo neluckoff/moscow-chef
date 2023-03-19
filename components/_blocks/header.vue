@@ -20,14 +20,14 @@
 						<li :class="{active: $route.path == `/`}" @click="hide">
 							<nuxt-link to="/">Главная</nuxt-link>
 						</li>
-						<li :class="{active: $route.path == `/blog/articles`}" @click="hide">
-							<nuxt-link to="/blog/articles">Обо мне</nuxt-link>
+						<li :class="{active: $route.path == `/about`}" @click="hide">
+							<nuxt-link to="/about">Обо мне</nuxt-link>
 						</li>
-						<li :class="{active: $route.path == `/events`}" @click="hide">
-							<nuxt-link to="/events">Контакты</nuxt-link>
+						<li :class="{active: $route.path == `/contact`}" @click="hide">
+							<nuxt-link to="/contact">Контакты</nuxt-link>
 						</li>
 						<li>
-							<nuxt-link to="/events">
+							<nuxt-link to="/recepts">
 								<div class="btn btn-primary">
 									<span>Книга рецептов</span>
 								</div>
