@@ -2,6 +2,7 @@
   <section>
     <blocks-hero></blocks-hero>
     <blocks-about></blocks-about>
+    <blocks-recepts></blocks-recepts>
   </section>
 </template>
 

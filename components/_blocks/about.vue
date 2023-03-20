@@ -28,7 +28,6 @@
 <style lang="scss" scoped>
 section {
     margin-top: 100px;
-    height: 100vh;
     width: 100%;
 
     .person {

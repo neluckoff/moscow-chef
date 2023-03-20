@@ -63,3 +63,25 @@
         color: $color-5;
     }
 }
+
+.btn-gradient {
+    background: $base-gradient;
+    padding: 2px;
+    
+    
+    span {
+        padding: 0px 30px;
+        color: $color-2;
+        background-color: $color-1;
+        border-radius: 12px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // color: $color-3;
+        // background: $base-gradient;
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
+    }
+}
