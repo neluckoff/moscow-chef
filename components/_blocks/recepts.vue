@@ -23,48 +23,16 @@
                         <div class="menu__buttons">
                             <div class="row">
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <nuxt-link to="/">
-                                        <div class="menu-card">
-                                            <base-svg name="steak"></base-svg>
-                                            <div class="menu-card__name">
-                                                <p class="menu-card-title">Основные блюда</p>
-                                                <p class="menu-card-desc">Горячие блюда</p>
-                                            </div>
-                                        </div>
-                                    </nuxt-link>
+                                    <items-menu-card :title="`Основные блюда`" :desc="`Горячие блюда`" :svg="`steak`" :path="`/`" />
                                 </div>
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <nuxt-link to="/">
-                                        <div class="menu-card">
-                                            <base-svg name="bowl-hot"></base-svg>
-                                            <div class="menu-card__name">
-                                                <p class="menu-card-title">Супы</p>
-                                                <p class="menu-card-desc">Горячие блюда, залитые бульеном</p>
-                                            </div>
-                                        </div>
-                                    </nuxt-link>
+                                    <items-menu-card :title="`Супы`" :desc="`Горячие блюда, залитые бульеном`" :svg="`bowl-hot`" :path="`/`" />
                                 </div>
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <nuxt-link to="/">
-                                        <div class="menu-card">
-                                            <base-svg name="salad"></base-svg>
-                                            <div class="menu-card__name">
-                                                <p class="menu-card-title">Салаты</p>
-                                                <p class="menu-card-desc">Свежие овощи и прекрасная заправка</p>
-                                            </div>
-                                        </div>
-                                    </nuxt-link>
+                                    <items-menu-card :title="`Салаты`" :desc="`Свежие овощи и прекрасная заправка`" :svg="`salad`" :path="`/`" />
                                 </div>
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <nuxt-link to="/">
-                                        <div class="menu-card">
-                                            <base-svg name="pie"></base-svg>
-                                            <div class="menu-card__name">
-                                                <p class="menu-card-title">Десерты</p>
-                                                <p class="menu-card-desc">Сладкие ингридиенты</p>
-                                            </div>
-                                        </div>
-                                    </nuxt-link>
+                                    <items-menu-card :title="`Десерты`" :desc="`Сладкие ингридиенты`" :svg="`pie`" :path="`/`" />
                                 </div>
                             </div>
                         </div>
@@ -115,41 +83,6 @@ section {
             display: flex;
             flex-direction: column;
             margin-top: 50px;
-        }
-        &-card {
-            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
-            border-radius: 10px;
-            padding: 20px;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            height: 100%;
-
-            .svg {
-                width: 67px;
-
-                :deep() svg {
-                    fill: $base-gradient;
-                }
-            }
-            &__name {
-                display: flex;
-                flex-direction: column;
-                margin-left: 20px;
-
-                p {
-                    margin-top: 0;
-                }
-            }
-            &-title {
-                color: $color-2;
-                font-weight: 600;
-            }
-            &-desc {
-                font-size: 16px;
-                line-height: 20px;
-                font-weight: 400;
-            }
         }
     }
     .dishes {
