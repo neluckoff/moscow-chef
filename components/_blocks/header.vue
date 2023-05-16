@@ -21,7 +21,7 @@
 							<nuxt-link to="/">Главная</nuxt-link>
 						</li>
 						<li :class="{active: $route.path == `/about`}" @click="hide">
-							<nuxt-link to="/about">Обо мне</nuxt-link>
+							<nuxt-link to="/#about-me">Обо мне</nuxt-link>
 						</li>
 						<li :class="{active: $route.path == `/contact`}" @click="hide">
 							<nuxt-link to="/contact">Контакты</nuxt-link>

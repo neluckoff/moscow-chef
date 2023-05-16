@@ -9,13 +9,19 @@
                         <div class="buttons">
                             <div class="row">
                                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 mb-3">
-                                    <items-menu-card :title="`Номер телефона`" :desc="`+7 (926) 527-68-96`" :svg="`phone`" :path="`about`" />
+                                    <a href="tel:89265276896">
+                                        <items-menu-card :title="`Номер телефона`" :desc="`+7 (926) 527-68-96`" :svg="`phone`" :path="`about`" />
+                                    </a>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 mb-3">
-                                    <items-menu-card :title="`Почта`" :desc="`vasil792@mail.ru`" :svg="`envelope-dot`" :path="`about`" />
+                                    <a href="mailto:vasil792@mail.ru">
+                                        <items-menu-card :title="`Почта`" :desc="`vasil792@mail.ru`" :svg="`envelope-dot`" :path="`about`" />
+                                    </a>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 mb-3">
-                                    <items-menu-card :title="`Telegram`" :desc="`@vasilchef`" :svg="`telegram`" :path="`about`" />
+                                    <a href="https://t.me/vasilchef" target="_blank">
+                                        <items-menu-card :title="`Telegram`" :desc="`@vasilchef`" :svg="`telegram`" :path="`about`" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -27,10 +33,10 @@
                             <div class="contact__form row">
                                 <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-5 mb-3">
                                     <input type="email" placeholder="E-mail" class="mb-3">
-                                    <input type="name" placeholder="Имя">
+                                    <input type="text" id="name" name="name" placeholder="Имя">
                                 </div>
                                 <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-7 mb-3">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
                                 </div>
                             </div>
                             <button class="btn btn-primary">
@@ -85,6 +91,7 @@ export default {
         display: flex;
         flex-direction: column;
         margin-bottom: 100px;
+        transition: all .3s;
 
         &:hover {
             box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.15);
@@ -95,37 +102,6 @@ export default {
         &__form {
             display: flex;
             flex-direction: row;
-            
-            input {
-                width: 100%;
-                background-color: $color-10;
-                font-size: 16px;
-                font-weight: 400;
-                padding: 10px 15px;
-                transition: all .3s;
-                border: 1px solid transparent;
-                border-radius: 10px;
-
-                &:focus {
-                    // border: 1px solid $green-color;
-                    outline: none;
-                }
-                &:active {
-                    // border: 1px solid $green-color;
-                }
-            }
-            textarea {
-                width: 100%;
-                max-width: 100%;
-                min-width: 100%;
-                background-color: $color-10;
-                font-size: 16px;
-                font-weight: 400;
-                padding: 10px 15px;
-                transition: all .3s;
-                border: 1px solid transparent;
-                border-radius: 10px;
-            }
         }
     }
 </style>

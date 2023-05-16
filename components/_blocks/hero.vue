@@ -36,7 +36,7 @@ section {
     background-image: url("./static/main.png");
     background-size: cover;
     // background-position: center center;
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
     .container {
         padding-top: 100px;

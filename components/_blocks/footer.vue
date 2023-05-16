@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-xxl-4">
@@ -17,25 +17,31 @@
                                     <nuxt-link to="/">Главная</nuxt-link>  
                                 </li>
                                 <li>
-                                    <nuxt-link to="/">Обо мне</nuxt-link>  
+                                    <nuxt-link to="/#about-me">Обо мне</nuxt-link>  
                                 </li>
                                 <li>
-                                    <nuxt-link to="/">Контакты</nuxt-link>  
+                                    <nuxt-link to="/contact">Контакты</nuxt-link>  
                                 </li>
                                 <li>
-                                    <nuxt-link to="/">Рецепты</nuxt-link>  
+                                    <nuxt-link to="/recepts">Рецепты</nuxt-link>  
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div class="col-xxl-4">
+
+                </div>
+            </div>
+            <div class="row footer-back">
+                Все права защищены © 2023 / Разработка сайтов @luckoff
             </div>
         </div>
-    </section>
+    </footer>
 </template>
 
 <style lang="scss" scoped>
-section {
+footer {
     background-color: $color-9;
     padding: 60px 0;
 
@@ -73,10 +79,25 @@ section {
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 16.94px;
+                        transition: all .3s;
+
+                        &:hover {
+                            color: $color-3;
+                        }
                     }
                 }
             }
         }
+    }
+    .footer-back {
+        margin-top: 30px;
+        border-top: 2px solid $color-footer;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        color: #595C63;
+        font-weight: 400;
+        font-size: 14px;
     }
 }
 </style>

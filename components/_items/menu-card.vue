@@ -1,13 +1,11 @@
 <template>
-    <nuxt-link :to="path">
-        <div class="menu-card">
-            <base-svg :name="svg" :class="{connection: path === 'about'}"></base-svg>
-            <div class="menu-card__name">
-                <p class="menu-card-title">{{title}}</p>
-                <p class="menu-card-desc">{{desc}}</p>
-            </div>
+    <div class="menu-card">
+        <base-svg :name="svg" :class="{connection: path === 'about'}"></base-svg>
+        <div class="menu-card__name">
+            <p class="menu-card-title">{{title}}</p>
+            <p class="menu-card-desc">{{desc}}</p>
         </div>
-    </nuxt-link>
+    </div>
 </template>
 
 <script>
@@ -27,7 +25,7 @@ export default {
         },
         path: {
             type: String,
-            default: () => "/",
+            default: () => null,
         }
     }
 }

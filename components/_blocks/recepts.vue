@@ -23,16 +23,24 @@
                         <div class="menu__buttons">
                             <div class="row">
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <items-menu-card :title="`Основные блюда`" :desc="`Горячие блюда`" :svg="`steak`" :path="`/`" />
+                                    <nuxt-link to="/">
+                                        <items-menu-card :title="`Основные блюда`" :desc="`Горячие блюда`" :svg="`steak`" />
+                                    </nuxt-link>
                                 </div>
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <items-menu-card :title="`Супы`" :desc="`Горячие блюда, залитые бульеном`" :svg="`bowl-hot`" :path="`/`" />
+                                    <nuxt-link to="/">
+                                        <items-menu-card :title="`Супы`" :desc="`Горячие блюда, залитые бульеном`" :svg="`bowl-hot`" />
+                                    </nuxt-link>
                                 </div>
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <items-menu-card :title="`Салаты`" :desc="`Свежие овощи и прекрасная заправка`" :svg="`salad`" :path="`/`" />
+                                    <nuxt-link to="/">
+                                        <items-menu-card :title="`Салаты`" :desc="`Свежие овощи и прекрасная заправка`" :svg="`salad`" />
+                                    </nuxt-link>
                                 </div>
                                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 mb-3">
-                                    <items-menu-card :title="`Десерты`" :desc="`Сладкие ингридиенты`" :svg="`pie`" :path="`/`" />
+                                    <nuxt-link to="/">
+                                        <items-menu-card :title="`Десерты`" :desc="`Сладкие ингридиенты`" :svg="`pie`" />
+                                    </nuxt-link>
                                 </div>
                             </div>
                         </div>
