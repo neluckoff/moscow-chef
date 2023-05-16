@@ -24,8 +24,8 @@
 export default {
     props: {
         crumbs: {
-            type: Object,
-            default: null,
+            type: Array,
+            default: [],
         }
     }
 };
@@ -82,7 +82,6 @@ export default {
                 display: flex;
                 // width: 8px;
                 height: 12px;
-                background-image: url(/images/main/index/breadcrumbs.svg);
                 margin: 0 6px;
                 @media screen and (max-width: $screen-lg) {
                     margin: 0 6px;

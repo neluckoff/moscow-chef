@@ -14,7 +14,7 @@
                         <div class="nav__menu">
                             <ul>
                                 <li>
-                                    <nuxt-link to="/">Главная</nuxt-link>  
+                                    <nuxt-link to="#">Главная</nuxt-link>  
                                 </li>
                                 <li>
                                     <nuxt-link to="/#about-me">Обо мне</nuxt-link>  
