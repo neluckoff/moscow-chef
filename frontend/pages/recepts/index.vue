@@ -72,7 +72,7 @@ export default {
                 },
             ],
             searchText: "",
-            items: [1, 1, 1, 1, 1],
+            items: [1, 1, 1, 1],
             totalPages: 2,
 			pageItems: 2,
         };
