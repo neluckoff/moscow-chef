@@ -46,9 +46,9 @@
 
 <img src="https://raw.githubusercontent.com/neluckoff/moscow-chef/master/docs/recepts.png">
 
-## Пользовательская документация к админ-панели
+<!--## Пользовательская документация к админ-панели
 
-В разработке...
+В разработке...-->
 
 ## Лицензия
 
