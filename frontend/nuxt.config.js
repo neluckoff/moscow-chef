@@ -10,7 +10,7 @@ module.exports = {
     //mode: "spa",
 
     head: {
-        title: 'base-app-luckoff',
+        title: 'Moscow Chef',
         htmlAttrs: {
             lang: 'ru'
         },
@@ -39,7 +39,8 @@ module.exports = {
     },
 
     plugins: [
-        //{ src: '~plugins/functions.js', ssr: false },
+        { src: '~plugins/owl-carousel.js', ssr: false },
+        { src: '~plugins/functions.js', ssr: true },
     ],
 
     components: true,
@@ -75,12 +76,12 @@ module.exports = {
     
     pwa: {
         meta: {
-            title: 'base-app',
+            title: 'Moscow Chef',
             author: 'luckoff',
         },
         manifest: {
-            name: 'base-app',
-            short_name: 'base-app',
+            name: 'Moscow Chef',
+            short_name: 'Moscow Chef',
             lang: 'ru',
         },
     },

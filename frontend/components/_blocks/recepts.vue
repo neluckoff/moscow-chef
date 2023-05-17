@@ -62,6 +62,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row row-flex">
+				            <div class="col-xxl-12">
+                                <items-carusel />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,7 +78,7 @@
 section {
     margin-top: 120px;
     width: 100%;
-    height: 100vh;
+    overflow: hidden;
 
     .menu {
         &__desc {
