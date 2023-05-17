@@ -18,12 +18,12 @@
 В данном блоке находится лозунг сайта и фотография шеф-повара, которому принадлежит данный сайт -  кулинарная книга. 
 Под лозунгом находится небольшая навигация по сайту, а именно две кнопки - "Книга рецептов" и "Связаться со мной".
 
-<img src="https://github.com/neluckoff/moscow-chef/tree/master/docs/hero.png">
+<img src="https://raw.githubusercontent.com/neluckoff/moscow-chef/master/docs/hero.png">
 
 #### Блок с небольшой информацией о шеф-поваре
 
 Этот блок является просто ознокомительным для основных пользователей сайта. 
 Именно благодаря нему пользователи могут познакомиться с тем, кому все рецепты принадлежат.
 
-<img src="https://github.com/neluckoff/moscow-chef/tree/master/docs/about.png">
+<img src="https://raw.githubusercontent.com/neluckoff/moscow-chef/master/docs/about.png">
 
