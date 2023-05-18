@@ -2,7 +2,7 @@
     <section class="about-me" id="about-me">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-5 col-xl-5 col-lg-5">
+                <div class="col-xxl-5 col-xl-5 col-lg-0">
                     <div class="person">
                         <img class="person__chef" src="person2.png" alt="">
                         <div class="person__ages">
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-7 col-xl-7 col-lg-7">
+                <div class="col-xxl-7 col-xl-7 col-lg-12">
                     <div class="about">
                         <h1>Обо мне</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit blanditiis non ut, quisquam beatae debitis veniam iure dignissimos nulla quia quos sit, ullam voluptatum neque modi tempora. Inventore aliquid repudiandae aut mollitia quis maxime? Nesciunt esse facere maxime repudiandae, perferendis sunt non dignissimos rem voluptate eum quaerat molestias corporis.</p>
@@ -77,6 +77,7 @@ section {
     section {
         margin-top: 0;
         .person {
+            display: none;
             &__chef {
                 max-width: 80%;
                 max-height: 90%;

@@ -91,6 +91,8 @@ section {
 
 @media screen and (max-width: $screen-lg) {
     section {
+        height: 100vh;
+        // background-position: center center;
         .person {
             display: none;
         }

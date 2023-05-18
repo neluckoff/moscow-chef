@@ -30,7 +30,32 @@
                     </div>
                 </div>
                 <div class="col-xxl-4">
-
+                    <div class="nav social">
+                        <div class="nav__menu">
+                            <ul>
+                                <li class="social__top">
+                                    <base-svg name="tg-footer" />
+                                    <a href="https://t.me/vasilchef" target="_blank">@vasilchef</a>
+                                </li>
+                                <li>
+                                    <base-svg name="phone-footer" />
+                                    <a href="tel:89265276896">+7 (926) 671-58-63</a>   
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav__menu">
+                            <ul>
+                                <li class="social__top">
+                                    <base-svg name="mail-footer" />
+                                    <a href="mailto:vasil792@mail.ru">vasil792@mail.ru</a>  
+                                </li>
+                                <li>
+                                    <base-svg name="tg-footer" />
+                                    <a href="https://t.me/vasilchef" target="_blank">@vasilchef</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row footer-back">
@@ -70,8 +95,11 @@ footer {
         &__menu {
             ul {
                 margin-top: 10px;
+                display: flex;
+                align-items: center;
                 li {
-                    display: inline;
+                    display: inline-flex;
+                    align-items: center;
                     margin-right: 10px;
 
                     a {
@@ -85,6 +113,29 @@ footer {
                             color: $color-3;
                         }
                     }
+                    .svg {
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .nav__menu {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0;
+                li {
+                    margin-top: 10px;
+                    margin-right: 30px;
+                }
+                .social__top {
+                    margin-top: 0;
                 }
             }
         }
