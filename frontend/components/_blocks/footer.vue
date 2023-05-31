@@ -67,6 +67,9 @@
 
 <style lang="scss" scoped>
 footer {
+    // position: fixed;
+    // bottom: 0;
+    width: 100%;
     background-color: $color-9;
     padding: 60px 0;
 

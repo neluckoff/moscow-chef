@@ -6,12 +6,15 @@
                     <ul class="breadcrumb">
                         <li class="item">
                             <nuxt-link :to="'/'" class="title">Главная</nuxt-link>
-                        </li>
-                        <li>
-                            >
+                            <span>
+                                >
+                            </span>
                         </li>
                         <li v-for="(item, i) in crumbs" :key="i" class="item">
                             <nuxt-link :to="item.to" class="title">{{ item.title }}</nuxt-link>
+                            <span v-if="i+1 != crumbs.length">
+                                > 
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -32,6 +35,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+span {
+    user-select: none;
+}
 .breadcrumbs {
     background-color: $color-1;
     ul::-webkit-scrollbar {
@@ -52,7 +58,7 @@ export default {
     ul {
         display: flex;
         flex-direction: row;
-        li {
+        li,span {
             display: flex;
             flex-direction: row;
             align-items: center;

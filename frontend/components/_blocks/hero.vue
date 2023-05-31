@@ -8,12 +8,12 @@
                         <p>Consectetur numquam poro nemo veniam eligendi rem adipisci quo modi.</p>
                     </div>
                     <div class="buttons">
-                        <nuxt-link to="">
+                        <nuxt-link to="/recepts">
                             <div class="btn btn-primary">
                                 <span>Книга рецептов</span>
                             </div>
                         </nuxt-link>
-                        <nuxt-link to="">
+                        <nuxt-link to="/contact">
                             <div class="btn btn-secondary">
                                 <span>Связаться со мной</span>
                             </div>
